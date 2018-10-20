@@ -1,0 +1,16 @@
+PODS:
+  - MExtensions (0.1.0)
+
+DEPENDENCIES:
+  - MExtensions (from `../`)
+
+EXTERNAL SOURCES:
+  MExtensions:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MExtensions: 1fca24f31e4b417f5833317e87bffa83ea314b99
+
+PODFILE CHECKSUM: 6fa8602a30cbe0020928bcc3652174a1a31e79d8
+
+COCOAPODS: 1.5.3
