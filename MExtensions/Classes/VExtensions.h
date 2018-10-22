@@ -7,6 +7,8 @@
 //
 
 #import "VMacros.h"
+#import "VMethodMacros.h"
+#import "VConstantMacros.h"
 #import "CGRect+Extensions.h"
 #import "UIView+Extensions.h"
 #import "UIControl+Extensions.h"
