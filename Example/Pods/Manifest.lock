@@ -1,15 +1,24 @@
 PODS:
-  - MExtensions (0.1.0)
+  - MExtensions (1.2.0):
+    - SDWebImage
+  - SDWebImage (4.4.3):
+    - SDWebImage/Core (= 4.4.3)
+  - SDWebImage/Core (4.4.3)
 
 DEPENDENCIES:
   - MExtensions (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SDWebImage
 
 EXTERNAL SOURCES:
   MExtensions:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MExtensions: 1fca24f31e4b417f5833317e87bffa83ea314b99
+  MExtensions: 97b2f4d433c3003cf325d9fdb17a75f9f8134d31
+  SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
 
 PODFILE CHECKSUM: 6fa8602a30cbe0020928bcc3652174a1a31e79d8
 
