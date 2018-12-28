@@ -20,3 +20,4 @@
 #import "UIColor+Extensions.h"
 #import "NSObject+Extensions.h"
 #import "NSData+Extensions.h"
+#import "NSDictionary+Extensions.h"

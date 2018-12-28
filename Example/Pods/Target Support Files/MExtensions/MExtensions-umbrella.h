@@ -15,6 +15,7 @@
 #import "NSArray+Extensions.h"
 #import "NSData+Extensions.h"
 #import "NSDate+Extensions.h"
+#import "NSDictionary+Extensions.h"
 #import "NSObject+Extensions.h"
 #import "NSString+Extensions.h"
 #import "NSString+HTML.h"
