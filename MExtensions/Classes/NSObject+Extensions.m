@@ -126,4 +126,17 @@
     return nil;
 }
 
+- (NSString *)hashValue
+{
+    if ([self isKindOfClass:[NSString class]]) {
+        return [(NSString *)self toMD5];
+    }else{
+        NSString *jsonString = [self toJsonString];
+        if (jsonString) {
+            return [jsonString toMD5];
+        }
+    }
+    return nil;
+}
+
 @end

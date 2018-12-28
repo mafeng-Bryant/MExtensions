@@ -11,9 +11,6 @@
 @interface NSArray(NSArray_Extensions)
 - (BOOL)writeToFile:(NSString *)path;
 +(NSArray*)readFile:(NSString*)path;
+- (id)hasObjectAtIndex:(NSUInteger)index;
 @end
 
-@interface NSDictionary(NSDictionary_Extensions)
-- (BOOL)writeToFile:(NSString *)path;
-+(NSDictionary*)readFile:(NSString*)path;
-@end

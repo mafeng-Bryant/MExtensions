@@ -8,6 +8,8 @@
 
 #import "UIColor+Extensions.h"
 
+#define MFRGB(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+
 @implementation UIColor (UIColor_Extensions)
 
 + (UIColor *)lightRandom
@@ -315,6 +317,35 @@
         return self.RGBAValue == color.RGBAValue;
     }
     return [self isEqual:color];
+}
+
++ (UIColor *)colorWithRGBString:(NSString *)rgbstring
+{
+    if ([rgbstring isKindOfClass:[NSString class]] && rgbstring.length>0) {
+        NSArray *color = [rgbstring componentsSeparatedByString:@","];
+        if ([color isKindOfClass:[NSArray class]] && color.count ==3) {
+            return MFRGB([color[0] floatValue], [color[1] floatValue], [color[2] floatValue], 1.0);
+        }
+    }
+    return [UIColor blackColor];
+}
+
++ (UIColor *)colorWithRGBString:(NSString *)rgbstring
+                          alpha:(CGFloat)alpha
+{
+    UIColor *color = [self colorWithRGBString:rgbstring];
+    return [color colorWithAlphaComponent:alpha];
+}
+
++ (UIColor *)colorWithRGBAString:(NSString *)rgbastring
+{
+    if ([rgbastring isKindOfClass:[NSString class]] && rgbastring.length>0) {
+        NSArray *color = [rgbastring componentsSeparatedByString:@","];
+        if ([color isKindOfClass:[NSArray class]] && color.count ==4) {
+            return MFRGB([color[0] floatValue], [color[1] floatValue], [color[2] floatValue], [color[3] floatValue]);
+        }
+    }
+    return [UIColor blackColor];
 }
 
 @end

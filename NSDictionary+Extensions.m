@@ -1,14 +1,21 @@
 //
-//  NSArray+Extensions.m
-//  Vote
+//  NSDictionary+Extensions.m
+//  MExtensions
 //
-//  Created by yuan on 13-11-19.
-//  Copyright (c) 2013年 yuan.he. All rights reserved.
+//  Created by patpat on 2018/12/28.
 //
 
-#import "NSArray+Extensions.h"
+#import "NSDictionary+Extensions.h"
 
-@implementation NSArray (NSArray_Extensions)
+@implementation NSDictionary (Extensions)
+
+- (BOOL)isContainKey:(NSString*)key
+{
+    if ([[self allKeys] containsObject:key]) {
+        return YES;
+    }
+    return NO;
+}
 
 - (BOOL)writeToFile:(NSString *)path{
     NSData * data = [NSKeyedArchiver archivedDataWithRootObject:self];
@@ -21,10 +28,4 @@
     return  [NSKeyedUnarchiver unarchiveObjectWithData:data];
 }
 
-- (id)hasObjectAtIndex:(NSUInteger)index
-{
-    return index < self.count ? self[index] : nil;
-}
-
 @end
-

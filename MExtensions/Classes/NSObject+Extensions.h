@@ -8,6 +8,7 @@
 
 #import <objc/runtime.h>
 #import <Foundation/Foundation.h>
+#import "NSString+Extensions.h"
 
 @interface NSObject(NSObject_PropertyExtension)
 
@@ -27,5 +28,10 @@
 
 //object转为json字符串
 - (NSString *)toJsonString;
+
+
+- (NSString *)hashValue;
+
+
 
 @end
