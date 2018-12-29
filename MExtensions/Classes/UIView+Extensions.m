@@ -288,6 +288,56 @@
     }
 }
 
+- (void)animationShowWithAlpha:(CGFloat)aplha
+{
+    if (@available(iOS 11.0,*)) {
+        self.alpha = aplha;
+    }
+}
+
+- (BOOL)isDisplayedInScreen
+{
+    if (!self) {
+        return NO;
+    }
+    CGRect screenRect = [UIScreen mainScreen].bounds;
+    //转换view对应window的Rect
+    CGRect rect = [self.superview convertRect:self.frame toView:nil];
+    if (CGRectIsEmpty(rect) || CGRectIsNull(rect)) {
+        return NO;
+    }
+    //如果隐藏就不考虑
+    if (self.hidden) {
+        return NO;
+    }
+    
+    //如果没有父视图，则不考虑
+    if (!self.superview) {
+        return NO;
+    }
+    
+    //frame is CGSizeZero不考虑
+    if (CGSizeEqualToSize(rect.size, CGSizeZero)) {
+        return NO;
+    }
+    
+    // 获取 该view与window 交叉的 Rect
+    CGRect intersectionRect = CGRectIntersection(rect, screenRect);
+    if (CGRectIsEmpty(intersectionRect) || CGRectIsNull(intersectionRect)) {
+        return NO;
+    }
+    return YES;
+    
+}
+
+- (UIImage *)getImageForScreenshot {
+    UIGraphicsBeginImageContextWithOptions(self.size, NO, [UIScreen mainScreen].scale);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    [self.layer renderInContext:context];
+    UIImage *targetImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return targetImage;
+}
 
 @end
 

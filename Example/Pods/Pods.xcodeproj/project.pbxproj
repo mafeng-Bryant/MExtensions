@@ -123,6 +123,12 @@
 		E252358221D719B500371014 /* UIView+UICollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E252358021D719B500371014 /* UIView+UICollectionViewCell.m */; };
 		E252358521D719BF00371014 /* UIButton+TitleImageAdjust.m in Sources */ = {isa = PBXBuildFile; fileRef = E252358321D719BE00371014 /* UIButton+TitleImageAdjust.m */; };
 		E252358621D719BF00371014 /* UIButton+TitleImageAdjust.h in Headers */ = {isa = PBXBuildFile; fileRef = E252358421D719BF00371014 /* UIButton+TitleImageAdjust.h */; };
+		E252359021D7362100371014 /* UIView+PopAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = E252358E21D7362000371014 /* UIView+PopAnimation.h */; };
+		E252359121D7362100371014 /* UIView+PopAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E252358F21D7362000371014 /* UIView+PopAnimation.m */; };
+		E252359421D7377E00371014 /* UIView+AlertPresent.h in Headers */ = {isa = PBXBuildFile; fileRef = E252359221D7377E00371014 /* UIView+AlertPresent.h */; };
+		E252359521D7377E00371014 /* UIView+AlertPresent.m in Sources */ = {isa = PBXBuildFile; fileRef = E252359321D7377E00371014 /* UIView+AlertPresent.m */; };
+		E252359821D739FE00371014 /* UITextField+ExtentRange.h in Headers */ = {isa = PBXBuildFile; fileRef = E252359621D739FE00371014 /* UITextField+ExtentRange.h */; };
+		E252359921D739FE00371014 /* UITextField+ExtentRange.m in Sources */ = {isa = PBXBuildFile; fileRef = E252359721D739FE00371014 /* UITextField+ExtentRange.m */; };
 		E2A18F1516419D3C283501D119E9693B /* NSDate+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 279676E537E927C06516B77525313332 /* NSDate+Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E51C467E71D0BAC53A1A8C01F2A07BA7 /* NSString+Card.h in Headers */ = {isa = PBXBuildFile; fileRef = BD1F73894F2A4E214A18B248A950661D /* NSString+Card.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8BB8674ED5E1EE10AB37D32E58248F6 /* NSString+Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A6D8BB4A8E7F0274A0D222BA353B54 /* NSString+Card.m */; };
@@ -345,6 +351,12 @@
 		E252358021D719B500371014 /* UIView+UICollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+UICollectionViewCell.m"; path = "MExtensions/Classes/UIView+UICollectionViewCell.m"; sourceTree = "<group>"; };
 		E252358321D719BE00371014 /* UIButton+TitleImageAdjust.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+TitleImageAdjust.m"; path = "MExtensions/Classes/UIButton+TitleImageAdjust.m"; sourceTree = "<group>"; };
 		E252358421D719BF00371014 /* UIButton+TitleImageAdjust.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+TitleImageAdjust.h"; path = "MExtensions/Classes/UIButton+TitleImageAdjust.h"; sourceTree = "<group>"; };
+		E252358E21D7362000371014 /* UIView+PopAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+PopAnimation.h"; path = "MExtensions/Classes/UIView+PopAnimation.h"; sourceTree = "<group>"; };
+		E252358F21D7362000371014 /* UIView+PopAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+PopAnimation.m"; path = "MExtensions/Classes/UIView+PopAnimation.m"; sourceTree = "<group>"; };
+		E252359221D7377E00371014 /* UIView+AlertPresent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+AlertPresent.h"; sourceTree = "<group>"; };
+		E252359321D7377E00371014 /* UIView+AlertPresent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+AlertPresent.m"; sourceTree = "<group>"; };
+		E252359621D739FE00371014 /* UITextField+ExtentRange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+ExtentRange.h"; sourceTree = "<group>"; };
+		E252359721D739FE00371014 /* UITextField+ExtentRange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ExtentRange.m"; sourceTree = "<group>"; };
 		E25765AD7BF9AA048936C05F129BFAB2 /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+CommonCrypto.h"; path = "MAESCrypt/Classes/NSData+CommonCrypto.h"; sourceTree = "<group>"; };
 		E2D856B2334FAA693DFCF23861CBA897 /* UIImage+Extensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Extensions.h"; path = "MExtensions/Classes/UIImage+Extensions.h"; sourceTree = "<group>"; };
 		E39DC71BE7F26D103F762301E6E188DE /* NSString+ImageSize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+ImageSize.h"; path = "MExtensions/Classes/NSString+ImageSize.h"; sourceTree = "<group>"; };
@@ -521,8 +533,14 @@
 				F93F8A434823EFF1727CE631B044B168 /* UIControl+Extensions.m */,
 				E2D856B2334FAA693DFCF23861CBA897 /* UIImage+Extensions.h */,
 				01E22326435C6F2F6E3F4B6F1855647D /* UIImage+Extensions.m */,
+				E252358E21D7362000371014 /* UIView+PopAnimation.h */,
+				E252358F21D7362000371014 /* UIView+PopAnimation.m */,
+				E252359221D7377E00371014 /* UIView+AlertPresent.h */,
+				E252359321D7377E00371014 /* UIView+AlertPresent.m */,
 				774509D6053792D4D342EFFA2CD69726 /* UIView+Extensions.h */,
 				9969991524C24FC18BAC6B5B387272D9 /* UIView+Extensions.m */,
+				E252359621D739FE00371014 /* UITextField+ExtentRange.h */,
+				E252359721D739FE00371014 /* UITextField+ExtentRange.m */,
 				6C980489E2E9C6180E40641129DEEBBE /* VConstantMacros.h */,
 				E252358421D719BF00371014 /* UIButton+TitleImageAdjust.h */,
 				E252358321D719BE00371014 /* UIButton+TitleImageAdjust.m */,
@@ -830,9 +848,12 @@
 			files = (
 				E252357121D716B000371014 /* NSString+Url.h in Headers */,
 				E252358121D719B500371014 /* UIView+UICollectionViewCell.h in Headers */,
+				E252359421D7377E00371014 /* UIView+AlertPresent.h in Headers */,
 				49B510784B5430B3F6D23324C6458B0A /* AESCrypt.h in Headers */,
 				61BBCEF797D70967F06457DD00000230 /* MAESCrypt-umbrella.h in Headers */,
+				E252359821D739FE00371014 /* UITextField+ExtentRange.h in Headers */,
 				D69BEC32D1F06B34AB9187E6B3917F95 /* NSData+Base64.h in Headers */,
+				E252359021D7362100371014 /* UIView+PopAnimation.h in Headers */,
 				7590BE6470EFC49461FEF953F572E5F3 /* NSData+CommonCrypto.h in Headers */,
 				E252358621D719BF00371014 /* UIButton+TitleImageAdjust.h in Headers */,
 				90962ADDF38EBA5CF6BDC3215C03EC08 /* NSString+Base64.h in Headers */,
@@ -1007,12 +1028,15 @@
 				0E3609D4BE56652A9EC4CF39C046297F /* AESCrypt.m in Sources */,
 				E252358221D719B500371014 /* UIView+UICollectionViewCell.m in Sources */,
 				17220B4F30B69D94706B48C336FF58E7 /* MAESCrypt-dummy.m in Sources */,
+				E252359121D7362100371014 /* UIView+PopAnimation.m in Sources */,
 				FD269B32F1F719E7663EF0C8622CC62D /* NSData+Base64.m in Sources */,
 				F48D406EF43A5B31ABE1053CCF984463 /* NSData+CommonCrypto.m in Sources */,
 				E252357221D716B000371014 /* NSString+Url.m in Sources */,
+				E252359921D739FE00371014 /* UITextField+ExtentRange.m in Sources */,
 				749530197F34FB552E467467798378A7 /* NSString+Base64.m in Sources */,
 				E252358521D719BF00371014 /* UIButton+TitleImageAdjust.m in Sources */,
 				50AAE51C778D2BFC4BB48AFB13799D36 /* ReplaceMe.m in Sources */,
+				E252359521D7377E00371014 /* UIView+AlertPresent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

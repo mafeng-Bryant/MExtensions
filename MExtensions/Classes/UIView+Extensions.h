@@ -147,6 +147,18 @@
 
 - (void)animationShow:(void (^)(BOOL finished))completion;
 
+- (BOOL)isDisplayedInScreen;//判断view是否显示在屏幕上面
+
+- (void)animationShowWithAlpha:(CGFloat)aplha;
+
+/**
+ *  返回截屏图片
+ *
+ *  @return 当前view生成的截屏图片
+ */
+- (UIImage *)getImageForScreenshot;
+
+
 @end
 
 //用typedef定义DismissBlock和CancelBlock
