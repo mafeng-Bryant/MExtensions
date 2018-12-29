@@ -1,5 +1,6 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/mafeng-Bryant/Specs.git'
 use_frameworks!
-
 target 'MExtensions_Example' do
   pod 'MExtensions', :path => '../'
 

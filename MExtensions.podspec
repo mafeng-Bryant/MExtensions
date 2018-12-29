@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MExtensions'
-  s.version          = '1.5.0'
+  s.version          = '1.6.0'
   s.summary          = 'A short description of MExtensions.'
 
 # This description is used to generate tags and improve search results.
@@ -35,4 +35,6 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'SDWebImage'
+  s.dependency 'MAESCrypt', '~> 1.0.0'
+  s.dependency 'MUIFont', '~> 1.0.0'
 end
