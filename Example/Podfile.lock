@@ -1,6 +1,6 @@
 PODS:
   - MAESCrypt (1.0.0)
-  - MExtensions (1.9.0):
+  - MExtensions (2.0.0):
     - MAESCrypt (~> 1.0.0)
     - MUIFont (~> 1.0.0)
     - SDWebImage
@@ -25,7 +25,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   MAESCrypt: baf33916e9cd34febc561d0f1b6c639d719175e2
-  MExtensions: d89f661e54d682aff0f7c249872e3b50762ac7a2
+  MExtensions: 33711587a671551a8c3d0b92d9c5ae41947e134e
   MUIFont: 52cc9d5e4e147dfb10adcb4421363a2b17454fd4
   SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
 

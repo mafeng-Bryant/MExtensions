@@ -125,6 +125,8 @@
 		DA3C488ACDD9EFE9B886108BF33ED928 /* UIButton+TitleImageAdjust.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F531919E8E540733FCAA02C4CB88DD8 /* UIButton+TitleImageAdjust.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DCA9DA3804551E5CDDE56775885964D2 /* UIImageView+HighlightedWebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 16F564B744525A1DEE6F7DF957AD0EF7 /* UIImageView+HighlightedWebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E012CECA756589F1B4736E7A1ED897A0 /* PPUIFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FB9A3F404CAE8CC2A7214E1F5E7B8DB /* PPUIFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E25235AC21D7484800371014 /* UIViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E25235AA21D7484700371014 /* UIViewController+Extension.m */; };
+		E25235AD21D7484800371014 /* UIViewController+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = E25235AB21D7484700371014 /* UIViewController+Extension.h */; };
 		E5813C2144B045B317C5E61802CF378E /* SDAnimatedImageRep.m in Sources */ = {isa = PBXBuildFile; fileRef = F922B2EDFABB74AAA4152B99C4538EA2 /* SDAnimatedImageRep.m */; };
 		EA0133FDD38C390A8292A592F4D9EDC3 /* UIControl+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A47E222F9DB18CAAFDA7E91773EFD151 /* UIControl+Extensions.m */; };
 		EAF78AB9B17C6D7F7CA04F7AE1C3AD27 /* NSImage+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 86E846BD367800DBF26ECA30BF92FFA2 /* NSImage+WebCache.m */; };
@@ -207,12 +209,12 @@
 /* Begin PBXFileReference section */
 		003672151AECAE67232144896E1CBAC8 /* VConstantMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VConstantMacros.h; path = MExtensions/Classes/VConstantMacros.h; sourceTree = "<group>"; };
 		00F2EC1B9A9000E20BB0C7B7B9B88725 /* SDWebImageTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageTransition.m; path = SDWebImage/SDWebImageTransition.m; sourceTree = "<group>"; };
-		02EE033B475DE819B1E820488D41F6EA /* MUIFont.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MUIFont.framework; path = MUIFont.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		02EE033B475DE819B1E820488D41F6EA /* MUIFont.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MUIFont.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		073D7FBA8A280B1EA2C7C1618DE265C6 /* SDWebImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDWebImage.xcconfig; sourceTree = "<group>"; };
 		085C2C8A479653C9B24E020A21356674 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08D7E10B8D149E362549D4D3DE386BF8 /* Pods-MExtensions_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MExtensions_Example-umbrella.h"; sourceTree = "<group>"; };
 		0A51833F90DB8A0BBD4BE1A994040537 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0CF3E901040D54E5C6A53E3F61B727F7 /* Pods_MExtensions_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MExtensions_Tests.framework; path = "Pods-MExtensions_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CF3E901040D54E5C6A53E3F61B727F7 /* Pods_MExtensions_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MExtensions_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E76C33B9C85B54C198C0268DBA941A8 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = SDWebImage/SDWebImageDownloader.h; sourceTree = "<group>"; };
 		0F47105F6D2F18D504333D4616170E99 /* SDWebImageCodersManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCodersManager.h; path = SDWebImage/SDWebImageCodersManager.h; sourceTree = "<group>"; };
 		11F95D46AA96CB8EC6860953DA1F54BB /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+CommonCrypto.m"; path = "MAESCrypt/Classes/NSData+CommonCrypto.m"; sourceTree = "<group>"; };
@@ -258,12 +260,12 @@
 		496DCD68CDC4280D0298481FBC564F53 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
 		4B6B24E1E333F139D1357941348EEDD9 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSString+HTML.h"; path = "MExtensions/Classes/GTMNSString+HTML.h"; sourceTree = "<group>"; };
 		4C31CB00BA0EC05A736983261DBB6523 /* SDWebImageCodersManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCodersManager.m; path = SDWebImage/SDWebImageCodersManager.m; sourceTree = "<group>"; };
-		4C4E5DB999795E1FAC33E1833E9894BA /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SDWebImage.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C4E5DB999795E1FAC33E1833E9894BA /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D1AC998A801139A7A1ED124FF596450 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/NSData+ImageContentType.m"; sourceTree = "<group>"; };
 		4E475498B8802E6638884249901ED7BD /* AESCrypt.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AESCrypt.m; path = MAESCrypt/Classes/AESCrypt.m; sourceTree = "<group>"; };
 		4F12564DA9D672EBE0EEB45C70403188 /* Pods-MExtensions_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MExtensions_Example-frameworks.sh"; sourceTree = "<group>"; };
 		4F299898F89B7BA7919A8E860C48A2A1 /* NSObject+Extensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Extensions.m"; path = "MExtensions/Classes/NSObject+Extensions.m"; sourceTree = "<group>"; };
-		4F78BB8A8A70170E1A39CE5651FA54F6 /* MExtensions.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = MExtensions.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4F78BB8A8A70170E1A39CE5651FA54F6 /* MExtensions.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = MExtensions.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		51755C3882F877E3850D835B1A048C70 /* NSDate+Extensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+Extensions.h"; path = "MExtensions/Classes/NSDate+Extensions.h"; sourceTree = "<group>"; };
 		541F1A929014887C2FA4BDFD44D26DE8 /* NSData+Extensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+Extensions.m"; path = "MExtensions/Classes/NSData+Extensions.m"; sourceTree = "<group>"; };
 		56046EC04C03EF3FCA6B3AEDD3A5E75B /* MExtensions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MExtensions-prefix.pch"; sourceTree = "<group>"; };
@@ -272,7 +274,7 @@
 		5895DD77A3B5A2CB36E8E543827F1D97 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
 		5A747EF32AE10DC086511790C210F922 /* NSDictionary+Extensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Extensions.h"; path = "MExtensions/Classes/NSDictionary+Extensions.h"; sourceTree = "<group>"; };
 		5DEB9EDB2A1B78F02CFB8F975B222358 /* NSString+HTML.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+HTML.m"; path = "MExtensions/Classes/NSString+HTML.m"; sourceTree = "<group>"; };
-		5EE9AC739466FBDFFCBE99B700B97A22 /* MAESCrypt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MAESCrypt.framework; path = MAESCrypt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EE9AC739466FBDFFCBE99B700B97A22 /* MAESCrypt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MAESCrypt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EFB328D410786C2A7472523343C9D50 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "SDWebImage/UIImageView+WebCache.h"; sourceTree = "<group>"; };
 		5FDA444A6EA17F528EC01EEEC587F31A /* SDWebImageTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageTransition.h; path = SDWebImage/SDWebImageTransition.h; sourceTree = "<group>"; };
 		6149C835F7DDE66EBBC0B0730DA9A0F8 /* Pods-MExtensions_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MExtensions_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -286,7 +288,7 @@
 		660FFC4CE3061D4CA6BC9D46DA73CABF /* MExtensions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MExtensions-dummy.m"; sourceTree = "<group>"; };
 		6704FD97FE8F714D2FE6A27638176309 /* NSButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSButton+WebCache.h"; path = "SDWebImage/NSButton+WebCache.h"; sourceTree = "<group>"; };
 		684ACA4F9AC7FDE4DCC48E514AB14F03 /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/SDWebImageCompat.h; sourceTree = "<group>"; };
-		692F744D09D04EA67147F9ACEE36D171 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		692F744D09D04EA67147F9ACEE36D171 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		6BFD5ADF185DE460A5E3FEEF902CF5E7 /* Pods-MExtensions_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MExtensions_Tests.modulemap"; sourceTree = "<group>"; };
 		6D5DA5F54A31E99439BA7BBB8A949979 /* SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-prefix.pch"; sourceTree = "<group>"; };
 		6E0516B13BC1FA14349C32CCCD3BBB24 /* NSString+AESCrypt.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+AESCrypt.m"; path = "MExtensions/Classes/NSString+AESCrypt.m"; sourceTree = "<group>"; };
@@ -304,7 +306,7 @@
 		7AF7B8B39A883545DE7B3D91DE4D7355 /* SDWebImageGIFCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageGIFCoder.h; path = SDWebImage/SDWebImageGIFCoder.h; sourceTree = "<group>"; };
 		7B44AD004E2C4B3C91B51BD71111C81A /* MUIFont.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MUIFont.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B4AE18B43E96806261A0F7ED8EDAA03 /* UIView+PopAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+PopAnimation.h"; path = "MExtensions/Classes/UIView+PopAnimation.h"; sourceTree = "<group>"; };
-		7DC4B0D37EDF9F0C465C91B01E5173D8 /* MExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MExtensions.framework; path = MExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DC4B0D37EDF9F0C465C91B01E5173D8 /* MExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DE1465D908B07FEF3EBAB15159AD1B1 /* NSString+Card.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Card.m"; path = "MExtensions/Classes/NSString+Card.m"; sourceTree = "<group>"; };
 		7F4F3A3677B2B02A789B1CFD6A029C35 /* Pods-MExtensions_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MExtensions_Tests-dummy.m"; sourceTree = "<group>"; };
 		7FF4E53AC1B6116E6CD85FFF25834522 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "SDWebImage/NSData+ImageContentType.h"; sourceTree = "<group>"; };
@@ -318,7 +320,7 @@
 		8FF1EA023A65BCCD964CE330F2E48DEE /* SDWebImageCoderHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCoderHelper.m; path = SDWebImage/SDWebImageCoderHelper.m; sourceTree = "<group>"; };
 		9138C375446FF863697DB8A182DB6A4A /* UIImage+ForceDecode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ForceDecode.h"; path = "SDWebImage/UIImage+ForceDecode.h"; sourceTree = "<group>"; };
 		936A79F0D89598D1BC4338E48ECF03BA /* MUIFont-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MUIFont-prefix.pch"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		956915D6567D74B8D46B6DACEDEC9B8E /* NSString+Base64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Base64.h"; path = "MAESCrypt/Classes/NSString+Base64.h"; sourceTree = "<group>"; };
 		9A519780F11AE06FDFA85669E60DE3D6 /* UIView+UICollectionViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+UICollectionViewCell.h"; path = "MExtensions/Classes/UIView+UICollectionViewCell.h"; sourceTree = "<group>"; };
 		9B02F08E699C9FC45C0B1C22631D6C66 /* SDWebImageGIFCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageGIFCoder.m; path = SDWebImage/SDWebImageGIFCoder.m; sourceTree = "<group>"; };
@@ -326,7 +328,7 @@
 		A18067DC98E488AA7FA9914E392D5F61 /* MUIFont-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MUIFont-umbrella.h"; sourceTree = "<group>"; };
 		A3E456A7C4E68BEAE4A550076DB92E24 /* SDWebImageImageIOCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageImageIOCoder.h; path = SDWebImage/SDWebImageImageIOCoder.h; sourceTree = "<group>"; };
 		A47E222F9DB18CAAFDA7E91773EFD151 /* UIControl+Extensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+Extensions.m"; path = "MExtensions/Classes/UIControl+Extensions.m"; sourceTree = "<group>"; };
-		A7FC5C790EC65867116D5E3D859E48CC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		A7FC5C790EC65867116D5E3D859E48CC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A85AD45928DD402CB2FF328A1A09AEB5 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = SDWebImage/SDWebImagePrefetcher.h; sourceTree = "<group>"; };
 		A9704E604E9C683437433EFCFE321802 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = SDWebImage/SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
 		ADF092FECF6D44313A274E26F6F59BA1 /* UITextField+ExtentRange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+ExtentRange.h"; path = "MExtensions/Classes/UITextField+ExtentRange.h"; sourceTree = "<group>"; };
@@ -354,10 +356,12 @@
 		DC6D5EF29A54CF9A1F4CBD295A568206 /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/SDImageCache.h; sourceTree = "<group>"; };
 		DDB495DCAD88800318CE0C86EC647851 /* MExtensions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MExtensions.modulemap; sourceTree = "<group>"; };
 		DF446E64263919EAED327009EDB19C4D /* UITextField+ExtentRange.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+ExtentRange.m"; path = "MExtensions/Classes/UITextField+ExtentRange.m"; sourceTree = "<group>"; };
+		E25235AA21D7484700371014 /* UIViewController+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Extension.m"; path = "MExtensions/Classes/UIViewController+Extension.m"; sourceTree = "<group>"; };
+		E25235AB21D7484700371014 /* UIViewController+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Extension.h"; path = "MExtensions/Classes/UIViewController+Extension.h"; sourceTree = "<group>"; };
 		E25765AD7BF9AA048936C05F129BFAB2 /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+CommonCrypto.h"; path = "MAESCrypt/Classes/NSData+CommonCrypto.h"; sourceTree = "<group>"; };
 		E53D12D6D8C605A2085A494B61446BC3 /* NSString+Card.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Card.h"; path = "MExtensions/Classes/NSString+Card.h"; sourceTree = "<group>"; };
 		E55E939EBBE3FED6ABF97E0132CE3A58 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8831DEDB2BED6929AAA96C8C78C26A9 /* Pods_MExtensions_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MExtensions_Example.framework; path = "Pods-MExtensions_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8831DEDB2BED6929AAA96C8C78C26A9 /* Pods_MExtensions_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MExtensions_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED2CE9EFD08FE6821140A48D0FED72AB /* NSString+AttributedString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+AttributedString.m"; path = "MExtensions/Classes/NSString+AttributedString.m"; sourceTree = "<group>"; };
 		EF846E83CF6EABD7992CC027FFF3F2B4 /* Pods-MExtensions_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MExtensions_Tests-resources.sh"; sourceTree = "<group>"; };
 		EFD8CF9F073E4DDEE10253E9F8588537 /* SDWebImageCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCoder.m; path = SDWebImage/SDWebImageCoder.m; sourceTree = "<group>"; };
@@ -511,7 +515,6 @@
 				FFDAE9663A18EF5CF4FBF1AFCFF8CB80 /* PPUIFont.m */,
 				F31D0CEBBF890B9D08547FCAFACCC48D /* Support Files */,
 			);
-			name = MUIFont;
 			path = MUIFont;
 			sourceTree = "<group>";
 		};
@@ -552,7 +555,6 @@
 				D27259FA326A7111DBE56126680EF4BC /* ReplaceMe.m */,
 				4DC2A45B516A510C1CA8F41CCB27C566 /* Support Files */,
 			);
-			name = MAESCrypt;
 			path = MAESCrypt;
 			sourceTree = "<group>";
 		};
@@ -716,6 +718,8 @@
 				36B7E42058810840AF7A9E8DDC529811 /* UIView+PopAnimation.m */,
 				9A519780F11AE06FDFA85669E60DE3D6 /* UIView+UICollectionViewCell.h */,
 				25C13A3213EE707CBC48921917710498 /* UIView+UICollectionViewCell.m */,
+				E25235AB21D7484700371014 /* UIViewController+Extension.h */,
+				E25235AA21D7484700371014 /* UIViewController+Extension.m */,
 				003672151AECAE67232144896E1CBAC8 /* VConstantMacros.h */,
 				445088380498EE46564AA4C0FBFC1B5D /* VExtensions.h */,
 				3B10FEDAAB3386A870023AA70E01A555 /* VMacros.h */,
@@ -765,7 +769,6 @@
 				0820D1726DE9447E60CDC36F47BCF8C2 /* Core */,
 				BC49F7D2A53C077AB78B171E7C9F530B /* Support Files */,
 			);
-			name = SDWebImage;
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
@@ -860,6 +863,7 @@
 				D69BEC32D1F06B34AB9187E6B3917F95 /* NSData+Base64.h in Headers */,
 				7590BE6470EFC49461FEF953F572E5F3 /* NSData+CommonCrypto.h in Headers */,
 				90962ADDF38EBA5CF6BDC3215C03EC08 /* NSString+Base64.h in Headers */,
+				E25235AD21D7484800371014 /* UIViewController+Extension.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1030,6 +1034,7 @@
 			files = (
 				0E3609D4BE56652A9EC4CF39C046297F /* AESCrypt.m in Sources */,
 				17220B4F30B69D94706B48C336FF58E7 /* MAESCrypt-dummy.m in Sources */,
+				E25235AC21D7484800371014 /* UIViewController+Extension.m in Sources */,
 				FD269B32F1F719E7663EF0C8622CC62D /* NSData+Base64.m in Sources */,
 				F48D406EF43A5B31ABE1053CCF984463 /* NSData+CommonCrypto.m in Sources */,
 				749530197F34FB552E467467798378A7 /* NSString+Base64.m in Sources */,
