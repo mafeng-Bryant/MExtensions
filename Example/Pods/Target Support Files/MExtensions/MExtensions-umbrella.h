@@ -28,6 +28,8 @@
 #import "UIColor+Extensions.h"
 #import "UIControl+Extensions.h"
 #import "UIImage+Extensions.h"
+#import "UITextField+ExtentRange.h"
+#import "UIView+AlertPresent.h"
 #import "UIView+Extensions.h"
 #import "UIView+PopAnimation.h"
 #import "UIView+UICollectionViewCell.h"
