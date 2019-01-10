@@ -23,6 +23,7 @@
 #import "NSString+Extensions.h"
 #import "NSString+HTML.h"
 #import "NSString+ImageSize.h"
+#import "NSString+NSDate.h"
 #import "NSString+Url.h"
 #import "UIButton+TitleImageAdjust.h"
 #import "UIColor+Extensions.h"
