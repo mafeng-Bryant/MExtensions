@@ -227,7 +227,7 @@
 
 + (BOOL)isNeedReloadData:(NSString *)dateString currentDateString:(NSTimeInterval)currentDateString
 {
-    if (isValidString(dateString)) {
+    if (dateString.length>0) {
         NSTimeInterval end_timesp = [[self getCurrentDateMinutes:dateString] timeIntervalSince1970];
         if (end_timesp -currentDateString <=0) {
             return YES;

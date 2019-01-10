@@ -1,6 +1,6 @@
 PODS:
   - MAESCrypt (1.0.0)
-  - MExtensions (2.0.3):
+  - MExtensions (2.0.4):
     - MAESCrypt (~> 1.0.0)
     - MLocalizedStringKit (~> 1.0.0)
     - MUIFont (~> 1.0.0)
@@ -28,7 +28,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   MAESCrypt: baf33916e9cd34febc561d0f1b6c639d719175e2
-  MExtensions: 124ed411918532f40213b646cc110d67310cb7e2
+  MExtensions: ef96438461e079849127064bf3568ccfa1775de5
   MLocalizedStringKit: 6a7a076c228d94347ab9f37794e028e62591028c
   MUIFont: 52cc9d5e4e147dfb10adcb4421363a2b17454fd4
   SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508

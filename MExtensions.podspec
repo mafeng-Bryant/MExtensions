@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MExtensions'
-  s.version          = '2.0.3'
+  s.version          = '2.0.5'
   s.summary          = 'A short description of MExtensions.'
 
 # This description is used to generate tags and improve search results.
